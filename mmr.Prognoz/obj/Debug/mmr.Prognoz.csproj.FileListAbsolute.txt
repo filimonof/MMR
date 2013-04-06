@@ -1,0 +1,11 @@
+D:\project\C.NET\MMR\bin\Debug\mmr.Prognoz.dll
+D:\project\C.NET\MMR\bin\Debug\mmr.Prognoz.pdb
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.PrognozOtkl.resources
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.PrognozOtkOptions.resources
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.Properties.Resources.resources
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.TestOptions.resources
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\GenerateResource.read.1.tlog
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\GenerateResource.write.1.tlog
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.dll
+D:\project\C.NET\MMR\mmr.Prognoz\obj\Debug\mmr.Prognoz.pdb

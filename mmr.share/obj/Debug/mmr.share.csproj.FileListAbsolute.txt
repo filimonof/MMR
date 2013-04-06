@@ -1,0 +1,5 @@
+D:\project\C.NET\MMR\bin\Debug\mmr.share.dll
+D:\project\C.NET\MMR\bin\Debug\mmr.share.pdb
+D:\project\C.NET\MMR\mmr.share\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C.NET\MMR\mmr.share\obj\Debug\mmr.share.dll
+D:\project\C.NET\MMR\mmr.share\obj\Debug\mmr.share.pdb

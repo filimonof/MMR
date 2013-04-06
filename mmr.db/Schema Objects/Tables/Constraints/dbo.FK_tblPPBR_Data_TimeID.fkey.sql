@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[tblPPBR_Data] ADD
+	CONSTRAINT [FK_tblPPBR_Data_TimeID] 
+		FOREIGN KEY ([TimeID]) 
+		REFERENCES [dbo].[tblTime] ([ID]) 
+		ON UPDATE CASCADE
+		ON DELETE  NO ACTION;

@@ -1,0 +1,15 @@
+D:\project\C.NET\MMR\bin\Debug\mmr.exe.config
+D:\project\C.NET\MMR\bin\Debug\mmr.exe.manifest
+D:\project\C.NET\MMR\bin\Debug\mmr.application
+D:\project\C.NET\MMR\bin\Debug\mmr.exe
+D:\project\C.NET\MMR\bin\Debug\mmr.pdb
+D:\project\C.NET\MMR\mmr\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.CK7Options.resources
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.MainForm.resources
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.Properties.Resources.resources
+D:\project\C.NET\MMR\mmr\obj\Debug\GenerateResource.read.1.tlog
+D:\project\C.NET\MMR\mmr\obj\Debug\GenerateResource.write.1.tlog
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.exe.manifest
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.application
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.exe
+D:\project\C.NET\MMR\mmr\obj\Debug\mmr.pdb

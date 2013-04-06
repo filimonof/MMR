@@ -1,0 +1,8 @@
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Script.PreDeployment.sql
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Script.PostDeployment.sql
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Database.sqlsettings
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Database.sqldeployment
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Database.sqlcmdvars
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db.deploymanifest
+D:\project\C.NET\MMR\mmr.db\sql\mmr.db.dbschema
+D:\project\C.NET\MMR\mmr.db\obj\Default\mmr.db.dbschema

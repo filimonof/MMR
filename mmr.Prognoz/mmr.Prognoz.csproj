@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C039DE52-CE11-40C4-BB02-62B9ACC1370B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mmr.Prognoz</RootNamespace>
+    <AssemblyName>mmr.Prognoz</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ParameterPrognozEnum.cs" />
+    <Compile Include="PrognozOtkl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrognozOtkl.Designer.cs">
+      <DependentUpon>PrognozOtkl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrognozOtkOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrognozOtkOptions.Designer.cs">
+      <DependentUpon>PrognozOtkOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TestOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestOptions.Designer.cs">
+      <DependentUpon>TestOptions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrognozOtkl.resx">
+      <DependentUpon>PrognozOtkl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrognozOtkOptions.resx">
+      <DependentUpon>PrognozOtkOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestOptions.resx">
+      <DependentUpon>TestOptions.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\cancel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Cancel_red.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Edit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\First.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Insert.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Last.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\PageNext.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\PagePrev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Post.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Prev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate\Up.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mmr.share\mmr.share.csproj">
+      <Project>{781C29E8-1905-480F-9A96-3549860B2F95}</Project>
+      <Name>mmr.share</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mmr.plugins\mmr.plugins.csproj">
+      <Project>{C7F76227-C188-47EA-A409-12A2B6CF21E2}</Project>
+      <Name>mmr.plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vit.CK7\vit.CK7.csproj">
+      <Project>{10D14FE1-BA39-499E-8CFB-C561CDA4D7A4}</Project>
+      <Name>vit.CK7</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crash Catcher.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

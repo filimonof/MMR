@@ -1,0 +1,10 @@
+D:\project\C.NET\MMR\bin\Debug\mmr.plugins.dll
+D:\project\C.NET\MMR\bin\Debug\mmr.plugins.pdb
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\mmr.plugins.Properties.Resources.resources
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\mmr.plugins.SimpleMDIForm.resources
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\mmr.plugins.SimpleOptionsMDIForm.resources
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\GenerateResource.read.1.tlog
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\GenerateResource.write.1.tlog
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\mmr.plugins.dll
+D:\project\C.NET\MMR\mmr.plugins\obj\Debug\mmr.plugins.pdb

@@ -1,0 +1,3057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="1.1" DspName="Microsoft.Data.Schema.Sql.Sql90DatabaseSchemaProvider" CollationLcid="1049" CollationCaseSensitive="False">
+	<Header>
+		<CustomData Category="ModelCapability">
+			<Metadata Name="ModelCapability" Value="Default" />
+		</CustomData>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="90" />
+		</CustomData>
+		<CustomData Category="Permissions" Type="XmlPermissions">
+			<Metadata Name="FileName" Value="D:\PROJECT\C.NET\MMR\MMR.DB\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="ISql90DatabaseOptions">
+			<Property Name="Collation" Value="Cyrillic_General_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="RecoveryMode" Value="1" />
+			<Property Name="IsAutoUpdateStatisticsAsyncOn" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters].[OnlyHourse]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="2" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters].[ControlSumma]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA['']]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblParameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblParameters].[Value]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[GETDATE()]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[DateParse]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[GETDATE()]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[DateEvent]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((1))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[((0))]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[GETDATE()]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[DateEvent]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="ISql90DefaultConstraint">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(0)]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[StatusID]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_CKParameters].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblParameters].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblParameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblMailParsed].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_HeaderMaket].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_DataMaket].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="15" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblTime].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblTime]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="16" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Status].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Status]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="17" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="18" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Maket].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Maket]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="19" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Logs].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="20" />
+		</Element>
+		<Element Type="ISql90PrimaryKeyConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Data].[ID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
+		</Element>
+		<Element Type="ISql90UniqueConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_CKParameters].[Codename]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
+		</Element>
+		<Element Type="ISql90UniqueConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblParameters].[Name]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblParameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+		</Element>
+		<Element Type="ISql90UniqueConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblMailParsed].[MailID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
+		</Element>
+		<Element Type="ISql90UniqueConstraint">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPlanPotr_DataMaket_HeaderID]">
+			<Property Name="OnDeleteAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[HeaderID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPPBR_CKParameters_ParameterID]">
+			<Property Name="OnDeleteAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters].[ParameterID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_CKParameters]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPPBR_Data_LogID]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[LogID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPPBR_Data_ParameterID]">
+			<Property Name="OnDeleteAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[ParameterID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPPBR_Data_TimeID]">
+			<Property Name="OnUpdateAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[TimeID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblTime].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblTime]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90ForeignKeyConstraint" Name="[dbo].[FK_tblPPBR_Logs_StatusID]">
+			<Property Name="OnUpdateAction" Value="1" />
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[StatusID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Status].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Status]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[MailParsed_Add]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF NOT EXISTS(SELECT * FROM tblMailParsed WHERE [MailID] = @MailID)	
+		INSERT INTO tblMailParsed ([MailID]) VALUES (@MailID)
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[MailID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[MailParsed_Add].[@MailID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[MailID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[MailParsed_Add].[@MailID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="215" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[MailParsed_Add]&#xD;&#xA;(&#xD;&#xA;&#x9;@MailID NVARCHAR(100) &#x9;&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[MailParsed_IsExists]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN		
+	DECLARE @ID INT
+	SELECT TOP 1 @ID = ID FROM tblMailParsed WHERE [MailID] = @MailID ORDER BY DateParse
+	IF @ID IS NULL 
+		RETURN 0 
+	ELSE 
+		RETURN @ID
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[MailID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[MailParsed_IsExists].[@MailID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblMailParsed].[DateParse]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[MailParsed_IsExists].[@MailID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="252" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[MailParsed_IsExists]&#xD;&#xA;(&#xD;&#xA;&#x9;@MailID NVARCHAR(100) &#x9;&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[Parameter_Set]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS(SELECT * FROM tblParameters WHERE [Name] = @name)
+		UPDATE tblParameters SET [Value] = @value WHERE [Name] = @name
+	ELSE
+		INSERT INTO tblParameters ([Name], [Value]) VALUES (@name, @value)	
+END;]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblParameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblParameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Parameter_Set].[@name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblParameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblParameters].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[Parameter_Set].[@value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblParameters].[Name]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[Parameter_Set].[@name]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[Parameter_Set].[@value]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="313" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[Parameter_Set]&#xD;&#xA;(&#xD;&#xA;&#x9;@name NVARCHAR(50), &#xD;&#xA;&#x9;@value NVARCHAR(MAX)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[PlanPotr_ParseMaket]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	
+	BEGIN TRANSACTION
+	
+	DECLARE @idoc INT,
+			@date NCHAR(8),		    
+			@kpo INT,   
+			@headerID INT,
+			@demInt INT,
+			@node NVARCHAR(50),
+			@value DECIMAL(18,2),
+			@outerData nvarchar(100) 
+		
+	EXEC sp_xml_preparedocument @idoc OUTPUT, @maket
+	
+	--разбор заголовка данных
+	
+	-- <LocationForecasts>
+    --    <LocationForecast DemDate="20110708" LocationKPO="316770">
+    --       ...
+    --    <LocationForecast
+    --</LocationForecast>
+    DECLARE locationForecasts CURSOR FOR     
+		SELECT [date], [kpo]
+    		FROM OPENXML (@idoc, N'//LocationForecast')
+    		WITH 
+			(
+				[date] NCHAR(8) 'attribute::DemDate',
+				[kpo] INT 'attribute::LocationKPO'
+			)
+	OPEN locationForecasts
+	FETCH NEXT FROM locationForecasts INTO @date, @kpo
+	WHILE (@@fetch_status <> -1)
+	BEGIN
+		IF (@@fetch_status <> -2)
+		BEGIN
+			--преобразовать date не нада
+			
+			
+			-- есть данные , сохранить заголовок
+			IF EXISTS (SELECT * FROM [tblPlanPotr_HeaderMaket] WHERE [DateMaket]=@date AND [LocationKPO]=@kpo)
+			BEGIN
+				UPDATE [tblPlanPotr_HeaderMaket] 
+				SET [DateEvent] = GETDATE()
+				WHERE [DateMaket]=@date AND [LocationKPO]=@kpo
+				--comment ?				
+				SELECT TOP 1 @headerID=[ID] FROM [tblPlanPotr_HeaderMaket] WHERE [DateMaket]=@date AND [LocationKPO]=@kpo				
+			END
+			ELSE
+			BEGIN
+				INSERT INTO [tblPlanPotr_HeaderMaket]([DateMaket], [LocationKPO])
+				VALUES (@date, @kpo)
+				--comment ?
+				SET @headerID = @@IDENTITY
+			END			
+			
+			-- цикл по вложенным значениям
+			
+			-- <LocationForecast DemDate="20110708" LocationKPO="316770">
+			--   <Values>
+            --     <Value DemInt="1">257</Value> 
+            --     ...
+			--     <Value DemInt="24">293</Value> 
+			--   </Values>
+			--   <SumValues>
+			--     <Value DemInt="1">257</Value> 
+			--     ...
+			--   </SumValues>			 
+			
+			set @outerData = N'//LocationForecast[attribute::DemDate='''+ CAST(@date AS NVARCHAR(8))+N''' and attribute::LocationKPO=''' + CAST(@kpo AS NVARCHAR(50))+  N''']/*/Value'
+			--N'//LocationForecast/*/Value'
+			DECLARE valuesCursor CURSOR FOR     
+				SELECT [demInt], [node], [value]				
+    				FROM OPENXML (@idoc, @outerData)    				
+    				WITH 
+					(
+						[demInt] INT 'attribute::DemInt',
+						[node] NVARCHAR(50) '@mp:parentlocalname',
+						[value] DECIMAL(18,2) 'text()'
+					)
+			OPEN valuesCursor
+			FETCH NEXT FROM valuesCursor INTO @demInt, @node, @value			
+			WHILE (@@fetch_status <> -1)
+			BEGIN
+				IF (@@fetch_status <> -2)
+				BEGIN	
+					-- есть данные , сохранить 
+					IF EXISTS (SELECT * FROM [tblPlanPotr_DataMaket] WHERE [HeaderID]=@headerID AND [Node] = @node AND [DemInt] = @demInt)
+					BEGIN
+						UPDATE [tblPlanPotr_DataMaket] 
+						SET [Value] = @value
+						WHERE [HeaderID] = @headerID AND [Node] = @node AND [DemInt] = @demInt
+					END
+					ELSE
+					BEGIN
+						INSERT INTO [tblPlanPotr_DataMaket]([HeaderID], [Node], [DemInt], [Value])
+						VALUES (@headerID, @node, @demInt, @value)
+					END				
+				END
+				FETCH NEXT FROM valuesCursor INTO @demInt, @node, @value			
+			END
+			CLOSE valuesCursor
+			DEALLOCATE valuesCursor
+				
+				
+			
+		END	
+		FETCH NEXT FROM locationForecasts INTO @date, @kpo
+	END
+	CLOSE locationForecasts
+	DEALLOCATE locationForecasts
+	
+	---ROLLBACK TRANSACTION
+	
+	EXEC sp_xml_removedocument @idoc
+
+	COMMIT TRANSACTION	
+
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[decimal]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[PlanPotr_ParseMaket].[@maket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[DateMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[LocationKPO]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[DateEvent]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[DateMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[LocationKPO]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket].[ID]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[HeaderID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[Node]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[DemInt]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[HeaderID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[Node]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket].[DemInt]" />
+				</Entry>
+				<Entry />
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[PlanPotr_ParseMaket].[@maket]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90XmlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[xml]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="3483" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[PlanPotr_ParseMaket]&#xD;&#xA;(&#xD;&#xA;&#x9;@maket xml&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblMailParsed]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblMailParsed].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="13" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblMailParsed].[MailID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="24" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblMailParsed].[DateParse]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="5" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblParameters]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblParameters].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="12" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblParameters].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="23" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblParameters].[Value]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="4" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPlanPotr_DataMaket]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_DataMaket].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="15" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_DataMaket].[HeaderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_DataMaket].[Node]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_DataMaket].[DemInt]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_DataMaket].[Value]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPlanPotr_DataMaket].[IX_tblPlanPotr_DataMaket_HeaderIDNodeDemInt]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_DataMaket].[HeaderID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_DataMaket].[Node]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_DataMaket].[DemInt]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_DataMaket]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPlanPotr_HeaderMaket]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_HeaderMaket].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="14" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_HeaderMaket].[DateMaket]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_HeaderMaket].[LocationKPO]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_HeaderMaket].[DateEvent]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="6" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPlanPotr_HeaderMaket].[Comment]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPlanPotr_HeaderMaket].[IX_tblPlanPotr_HeaderMaket_DateMaketLocationKPO]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_HeaderMaket].[DateMaket]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPlanPotr_HeaderMaket].[LocationKPO]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPlanPotr_HeaderMaket]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_CKParameters]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_CKParameters].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="11" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_CKParameters].[Codename]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="22" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_CKParameters].[ParameterID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_CKParameters].[OnlyHourse]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="2" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_CKParameters].[ControlSumma]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="3" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_Data]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Data].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="21" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Data].[LogID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Data].[TimeID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Data].[ParameterID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Data].[Value]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Scale" Value="2" />
+									<Property Name="Precision" Value="18" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[decimal]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPPBR_Data].[IX_tblPPBR_Data_Log]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Data].[LogID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPPBR_Data].[IX_tblPPBR_Data_LogTimeParameter]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Data].[LogID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Data].[TimeID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Data].[ParameterID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Data_Add]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	DECLARE @delimeter VARCHAR(10), @len_delimeter INT
+	SET @delimeter = ' '	
+	SET @len_delimeter = 1
+
+	SET @param = LTRIM(RTRIM(@param))
+	SET @value = LTRIM(RTRIM(@value))
+
+	DECLARE @p INT, @v DECIMAL(18, 2)
+	DECLARE @i INT, @to INT, @i2 INT, @to2 INT
+	SET @i = 0	
+	SET @i2 = 0	
+	
+	WHILE @i <= LEN(@param)
+	BEGIN	
+		SET @to = CHARINDEX(@delimeter, @param, @i)
+		SET @to2 = CHARINDEX(@delimeter, @value, @i2)
+		
+		IF @to = 0 SET @to = LEN(@param)+1
+		IF @to2 = 0 SET @to2 = LEN(@value)+1
+				
+		SET @p = CAST(SUBSTRING(@param, @i, @to-@i) AS INT)
+		SET @v = CAST(SUBSTRING(@value, @i2, @to2-@i2) AS DECIMAL(18,2))
+		
+		INSERT INTO tblPPBR_Data(LogID, TimeID, ParameterID, Value) VALUES (@logID, @timeID, @p, @v)	
+		
+		SET @i = @to + @len_delimeter
+		SET @i2 = @to2 + @len_delimeter
+	END
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[varchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[decimal]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data_Add].[@param]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data_Add].[@value]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[decimal]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[LogID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[TimeID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[ParameterID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[Value]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data_Add].[@logID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data_Add].[@timeID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Data_Add].[@logID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Data_Add].[@timeID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Data_Add].[@param]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Data_Add].[@value]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="949" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[tblPPBR_Data_Add]&#xD;&#xA;(&#xD;&#xA;&#x9;@logID INT,&#xD;&#xA;&#x9;@timeID INT,&#xD;&#xA;&#x9;@param VARCHAR(MAX),&#xD;&#xA;&#x9;@value VARCHAR(MAX)&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Data_CreateMaketPPBR]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SET NOCOUNT ON	
+
+	DECLARE @ID INT
+	DECLARE @IsLabelTime BIT
+	DECLARE @cols NVARCHAR(MAX)
+	SET @cols =  N''
+	DECLARE @header NVARCHAR(MAX)
+	SET @header =  N''
+
+	DECLARE ColsCursor CURSOR FOR	
+		SELECT [ID], IsLabelTime
+		FROM tblPPBR_Parameters 
+		WHERE [Enabled] = 1 
+		ORDER BY [Order]
+	OPEN ColsCursor
+	FETCH NEXT FROM ColsCursor INTO @ID, @IsLabelTime
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		IF @IsLabelTime = 1 
+			SET @header = @header + N',t.Time AS [' + CAST(@ID AS nvarchar(10)) + N']' 
+		ELSE
+			SET @header = @header + N',[' + CAST(@ID AS nvarchar(10)) + N']'
+		
+		SET @cols = @cols + N',[' + CAST(@ID AS nvarchar(10)) + N']'
+		
+		FETCH NEXT FROM ColsCursor INTO @ID, @IsLabelTime
+	END
+	CLOSE ColsCursor
+	DEALLOCATE ColsCursor	
+	
+	IF LEN(@cols) = 0
+	BEGIN
+		RAISERROR ('Нет параметров', 16, 1)
+		GOTO QuitWithRollback
+	END
+	
+	-- убираем первую запятую
+	SET @cols = SUBSTRING(@cols, 2, LEN(@cols))
+	SET @header = SUBSTRING(@header, 2, LEN(@header))
+	--set @cols =  '[11], [12], [13], [14], [15], [16], [17], [18]'
+	--set @header =  't.Time AS [11], [12], [13], [14], [15], [16], [17], [18]'
+
+	DECLARE @sql NVARCHAR(MAX)
+	SET @sql = N'SELECT ' + @header + ' 
+	 FROM ( 
+		SELECT  TimeID, ParameterID, [Value]
+		FROM dbo.tblPPBR_Data 
+		WHERE LogID = ' + CAST(@logID AS nvarchar(10)) + '
+	) AS data PIVOT (
+		SUM ( [Value] ) 
+		FOR ParameterID IN (' + @cols + ' )	
+	) AS pivot_data JOIN dbo.tblTime t ON pivot_data.[TimeID] = t.ID
+	ORDER BY TimeID';
+	EXEC(@sql)
+	
+GOTO   Quit
+
+QuitWithRollback:
+	IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION 
+
+Quit: 	
+	
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[bit]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data_CreateMaketPPBR].[@logID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Data_CreateMaketPPBR].[@logID]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1705" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[tblPPBR_Data_CreateMaketPPBR]&#xD;&#xA;(&#xD;&#xA;&#x9;@logID INT &#x9;&#xD;&#xA;) &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_Logs]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Logs].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="20" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Logs].[DateEvent]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="9" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Logs].[DateMaket]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Logs].[StatusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="10" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Logs].[Comment]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPPBR_Logs].[IX_tblPPBR_Logs_DateMaket]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Logs].[DateMaket]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Logs_Add]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN	
+	INSERT INTO tblPPBR_Logs (DateMaket, StatusID, Comment) VALUES (@dt, @status, @comment)
+	SET @id = SCOPE_IDENTITY()
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[DateMaket]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[StatusID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[Comment]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Add].[@dt]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Add].[@status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Add].[@comment]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Add].[@id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Add].[@dt]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Add].[@status]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Add].[@comment]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Add].[@id]">
+						<Property Name="IsOutput" Value="True" />
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="270" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[tblPPBR_Logs_Add]&#xD;&#xA;(&#xD;&#xA;&#x9;@dt DATETIME, &#xD;&#xA;&#x9;@status INT = 0, &#xD;&#xA;&#x9;@comment NVARCHAR(MAX) = NULL,&#xD;&#xA;&#x9;@id INT OUTPUT&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Logs_Update]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	IF EXISTS(SELECT * FROM tblPPBR_Logs WHERE [ID] = @id)
+		UPDATE tblPPBR_Logs SET StatusID = @status, Comment = @comment WHERE [ID] = @id
+END]]></Value>
+			</Property>
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Update].[@id]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[StatusID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Update].[@status]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[Comment]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs_Update].[@comment]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Logs].[ID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Update].[@id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Update].[@status]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[0]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSubroutineParameter" Name="[dbo].[tblPPBR_Logs_Update].[@comment]">
+						<Property Name="DefaultExpressionScript">
+							<Value><![CDATA[NULL]]></Value>
+						</Property>
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="269" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[tblPPBR_Logs_Update]&#xD;&#xA;(&#xD;&#xA;&#x9;@id INT, &#xD;&#xA;&#x9;@status INT = 0,&#xD;&#xA;&#x9;@comment NVARCHAR(MAX) = NULL&#xD;&#xA;)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_Maket]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Maket].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="19" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Maket].[FileName]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Maket].[Maket]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="IsMax" Value="True" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_Parameters]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Parameters].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="18" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Parameters].[Name]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="25" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Parameters].[Order]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Parameters].[Enabled]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="7" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[bit]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="8" />
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Index" Name="[dbo].[tblPPBR_Parameters].[IX_tblPPBR_Parameters_OrderEnabled]">
+			<Property Name="IsUnique" Value="True" />
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="IndexedObject">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblPPBR_Status]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Status].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="17" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblPPBR_Status].[Status]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90Table" Name="[dbo].[tblTime]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblTime].[ID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+						<AttachedAnnotation Disambiguator="16" />
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="ISqlSimpleColumn" Name="[dbo].[tblTime].[Time]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="ISql90TypeSpecifier">
+									<Property Name="Length" Value="6" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Owner">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_DELETE]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="SqlTriggerType" Value="1" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN
+	SET NOCOUNT ON
+	
+	IF @@ROWCOUNT > 1
+	BEGIN
+		RAISERROR ('Нельзя добавлять несколько значений сразу', 16, 1)
+		GOTO QuitWithRollback		
+	END
+	
+	IF NOT EXISTS(SELECT * FROM inserted)
+		AND EXISTS(SELECT * FROM deleted WHERE IsLabelTime = 1) 
+		AND EXISTS(SELECT * FROM tblPPBR_Parameters) 
+	BEGIN
+		RAISERROR ('Нельзя удалять временную метку, если есть другие параметры', 16, 1)
+		GOTO QuitWithRollback
+	END
+	
+	-- Перещёт order, чтобы было попорядку
+	-- работает, ничего не трогать, заебался думать мысль
+	UPDATE tblPPBR_Parameters 
+	SET [Order] = pNum.Num
+	FROM 
+		(SELECT COUNT(*) as Num, p1.[Name]
+		FROM tblPPBR_Parameters p1 JOIN tblPPBR_Parameters p2 ON p1.[Order] >= p2.[Order]
+		WHERE p1.Enabled = 1				
+		GROUP BY p1.[Name]) pNum 
+	WHERE pNum.[Name] = tblPPBR_Parameters.[Name]
+
+GOTO   Quit
+
+QuitWithRollback:
+	IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION 
+
+Quit: 
+	
+END;]]></Value>
+			</Property>
+			<Property Name="IsDeleteTrigger" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parent">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1012" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE TRIGGER [TR_tblPPBR_Parameters_DELETE]&#xD;&#xA;ON [dbo].[tblPPBR_Parameters]&#xD;&#xA;FOR DELETE &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_INSERT]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="SqlTriggerType" Value="1" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN
+	SET NOCOUNT ON	
+
+	IF @@ROWCOUNT > 1
+	BEGIN
+		RAISERROR ('Нельзя добавлять несколько значений сразу', 16, 1)
+		GOTO QuitWithRollback
+	END
+
+	-- при инсерт указывается только Name
+	
+	IF NOT EXISTS(SELECT * FROM deleted)
+	BEGIN
+		IF NOT EXISTS(SELECT * FROM tblPPBR_Parameters p JOIN inserted i ON p.ID <> i.ID WHERE p.[Enabled] = 1) 
+		BEGIN
+			-- если первая активная запись то полюбому метку ставим временной
+			UPDATE tblPPBR_Parameters
+				SET [Order] = 1, IsLabelTime = 1
+				FROM inserted 
+				WHERE inserted.ID = tblPPBR_Parameters.ID 
+		END
+		ELSE
+		BEGIN
+			-- order ставится попорядку
+			UPDATE tblPPBR_Parameters
+				SET [Order] = 1 + (SELECT MAX([Order]) FROM tblPPBR_Parameters WHERE [Enabled] = 1)
+				FROM inserted 
+				WHERE inserted.ID = tblPPBR_Parameters.ID 
+		END
+	END	
+
+GOTO   Quit
+
+QuitWithRollback:
+	IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION 
+
+Quit: 
+			
+END;]]></Value>
+			</Property>
+			<Property Name="IsInsertTrigger" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parent">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="1019" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE TRIGGER [TR_tblPPBR_Parameters_INSERT]&#xD;&#xA;ON [dbo].[tblPPBR_Parameters]&#xD;&#xA;FOR INSERT&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_UPDATE_BEFORE]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="SqlTriggerType" Value="3" />
+			<Property Name="BodyScript">
+				<Value><![CDATA[ 
+BEGIN	
+	SET NOCOUNT ON
+	
+	IF @@ROWCOUNT > 1
+	BEGIN
+		RAISERROR ('Нельзя добавлять несколько значений сразу', 16, 1)
+		GOTO QuitWithRollback  		
+	END
+	
+	IF EXISTS(SELECT * FROM inserted) AND EXISTS(SELECT * FROM deleted)
+	BEGIN	
+		DECLARE @ID INT
+		SELECT @ID = ID FROM inserted
+
+-- IsLabelTime
+		IF UPDATE([IsLabelTime])
+		BEGIN		
+			IF EXISTS(SELECT TOP 1 * FROM tblPPBR_Data d JOIN inserted i ON d.ParameterID = i.ID)
+			BEGIN
+				RAISERROR ('Этот параметр не может быть временной меткой, т.к. на него есть данные', 16, 1)
+				GOTO QuitWithRollback  
+			END					
+			
+			IF EXISTS(SELECT * FROM inserted WHERE IsLabelTime = 0) 
+				AND EXISTS(SELECT * FROM deleted WHERE IsLabelTime = 1)
+			BEGIN
+				RAISERROR ('Должна быть одна метка времени', 16, 1)
+				GOTO QuitWithRollback  
+			END
+
+			IF EXISTS(SELECT * FROM inserted WHERE Enabled = 0) 				
+			BEGIN
+				RAISERROR ('Нельзя архивный параметр сделать меткой времени', 16, 1)
+				GOTO QuitWithRollback  
+			END
+
+			-- если кто-то становится меткой времени то активные метки снимаются
+			IF EXISTS(SELECT * FROM inserted WHERE IsLabelTime = 1)
+			BEGIN
+				UPDATE tblPPBR_Parameters
+					SET IsLabelTime = 0
+					FROM inserted 
+					WHERE inserted.ID <> tblPPBR_Parameters.ID 		
+
+				UPDATE tblPPBR_Parameters
+					SET IsLabelTime = 1
+					FROM inserted 
+					WHERE inserted.ID = tblPPBR_Parameters.ID 		
+			END	
+			
+		END
+
+-- Name
+		IF UPDATE([Name]) 
+		BEGIN
+			-- обработку этого события отдаем в тригер AFTER UPDATE
+			-- а он отдаст на усмотрение UNIQUE		
+			UPDATE tblPPBR_Parameters
+				SET tblPPBR_Parameters.[Name] = inserted.[Name]
+				FROM inserted 
+				WHERE inserted.ID=tblPPBR_Parameters.ID 
+		END
+
+-- Enabled
+		IF UPDATE(Enabled) 
+		BEGIN		
+			IF EXISTS(SELECT * FROM inserted WHERE IsLabelTime = 1) 				
+			BEGIN
+				RAISERROR ('Метки времени выводить из работы нельзя', 16, 1)
+				GOTO QuitWithRollback  
+			END		
+			DECLARE @maxOrder INT			
+			IF EXISTS(SELECT * FROM inserted WHERE Enabled = 1)
+			BEGIN
+				SELECT @maxOrder = MAX([Order]) FROM tblPPBR_Parameters WHERE [Enabled] = 1
+				IF @maxOrder IS NULL SET @maxOrder = 0
+				-- вводится в работу, ставим в конец
+				UPDATE tblPPBR_Parameters
+					SET [Order] = @maxOrder + 1,
+						Enabled = 1
+					FROM inserted 
+					WHERE inserted.ID = tblPPBR_Parameters.ID 				
+			END
+			ELSE
+			BEGIN
+				SELECT @maxOrder = MAX([Order]) FROM tblPPBR_Parameters WHERE [Enabled] = 0
+				IF @maxOrder IS NULL SET @maxOrder = 0
+				-- выводится в архив, ставим в конец
+				UPDATE tblPPBR_Parameters
+					SET [Order] = @maxOrder + 1,
+						Enabled = 0
+					FROM inserted 
+					WHERE inserted.ID = tblPPBR_Parameters.ID 		
+			END
+			--Перещитываем параметр order чтобы всегда активные параметры были попорядку
+			UPDATE tblPPBR_Parameters 
+			SET [Order] = pNum.Num
+			FROM (
+				SELECT COUNT(*) as Num, p1.[Name]
+				FROM (SELECT * FROM tblPPBR_Parameters WHERE Enabled=1) p1 
+					JOIN (SELECT * FROM tblPPBR_Parameters WHERE Enabled=1) p2 
+					ON p1.[Order]>=p2.[Order]				
+				GROUP BY p1.[Name]
+				) pNum 
+			WHERE pNum.[Name] = tblPPBR_Parameters.[Name]
+		END
+
+-- Order
+		IF UPDATE([Order]) 
+		BEGIN
+			DECLARE @newOrder INT			
+			DECLARE @oldOrder INT
+			DECLARE @enabled INT
+			SELECT @newOrder = [Order] FROM inserted			
+			SELECT @oldOrder = [Order] FROM deleted
+			SELECT @enabled = [Enabled] FROM deleted
+
+			IF (@newOrder > @oldOrder) AND  @ID = (SELECT TOP 1 ID FROM tblPPBR_Parameters WHERE Enabled = @enabled ORDER BY [Order] DESC)
+			BEGIN
+				RAISERROR ('Это последний параметр', 16, 1)
+				GOTO QuitWithRollback  
+			END			
+			IF (@newOrder < @oldOrder) AND  @ID = (SELECT TOP 1 ID FROM tblPPBR_Parameters WHERE Enabled = @enabled ORDER BY [Order] ASC)
+			BEGIN
+				RAISERROR ('Это первый параметр', 16, 1)
+				GOTO QuitWithRollback  				
+			END	
+			IF EXISTS(SELECT * FROM tblPPBR_Parameters WHERE Enabled = @enabled AND [Order] = @newOrder )
+			BEGIN
+				UPDATE tblPPBR_Parameters
+					SET tblPPBR_Parameters.[Order] = NULL
+					FROM inserted 
+					WHERE inserted.ID=tblPPBR_Parameters.ID 
+
+				UPDATE tblPPBR_Parameters
+					SET [Order] = @oldOrder
+					WHERE [Order] = @newOrder
+			END
+			UPDATE tblPPBR_Parameters
+				SET tblPPBR_Parameters.[Order] = inserted.[Order]
+				FROM inserted 
+				WHERE inserted.ID=tblPPBR_Parameters.ID 
+
+		END --IF UPDATE([Order])
+
+	END	--IF EXISTS(SELECT * FROM inserted) AND EXISTS(SELECT * FROM deleted)
+ 
+GOTO   Quit
+
+QuitWithRollback:
+	IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION 
+
+Quit: 
+
+END;]]></Value>
+			</Property>
+			<Property Name="IsUpdateTrigger" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[int]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[IsLabelTime]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Data].[ParameterID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry />
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Name]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[ID]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Enabled]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters].[Order]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parent">
+				<Entry>
+					<References Name="[dbo].[tblPPBR_Parameters]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="4735" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE TRIGGER [dbo].[TR_tblPPBR_Parameters_UPDATE_BEFORE]&#xD;&#xA;ON [dbo].[tblPPBR_Parameters]&#xD;&#xA;INSTEAD OF UPDATE &#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="ISql90File" Name="[PrimaryFileName]">
+			<Property Name="FileName" Value="$(DefaultDataPath)$(DatabaseName).mdf" />
+			<Relationship Name="Filegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="ISql90File" Name="[PrimaryLogFileName]">
+			<Property Name="FileName" Value="$(DefaultDataPath)$(DatabaseName)_log.ldf" />
+			<Property Name="IsLogFile" Value="True" />
+		</Element>
+	</Model>
+</DataSchemaModel>

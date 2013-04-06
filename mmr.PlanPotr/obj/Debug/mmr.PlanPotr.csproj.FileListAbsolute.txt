@@ -1,0 +1,8 @@
+D:\project\C.NET\MMR\bin\Debug\mmr.PlanPotr.dll
+D:\project\C.NET\MMR\bin\Debug\mmr.PlanPotr.pdb
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\ResolveAssemblyReference.cache
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\mmr.PlanPotr.PlanPotrForm.resources
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\GenerateResource.read.1.tlog
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\GenerateResource.write.1.tlog
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\mmr.PlanPotr.dll
+D:\project\C.NET\MMR\mmr.PlanPotr\obj\Debug\mmr.PlanPotr.pdb

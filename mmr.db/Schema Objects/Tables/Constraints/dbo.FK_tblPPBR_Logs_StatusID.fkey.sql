@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[tblPPBR_Logs] 
+	ADD CONSTRAINT [FK_tblPPBR_Logs_StatusID] 
+	FOREIGN KEY (StatusID) 
+	REFERENCES [dbo].[tblPPBR_Status](ID) 
+	ON UPDATE  CASCADE 
+	ON DELETE  NO ACTION

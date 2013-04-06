@@ -1,0 +1,6 @@
+﻿ALTER TABLE [dbo].[tblPPBR_Data] ADD
+	CONSTRAINT [FK_tblPPBR_Data_LogID] 
+		FOREIGN KEY ([LogID]) 
+		REFERENCES [dbo].[tblPPBR_Logs] ([ID])
+		ON UPDATE  NO ACTION 
+		ON DELETE  NO ACTION;
