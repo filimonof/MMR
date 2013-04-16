@@ -1,9 +1,0 @@
-D:\project\C.NET\MMR\bin\Debug\vit.dialogs.dll
-D:\project\C.NET\MMR\bin\Debug\vit.dialogs.pdb
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\ResolveAssemblyReference.cache
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\vit.dialogs.InputStringDlg.resources
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\vit.dialogs.Properties.Resources.resources
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\GenerateResource.read.1.tlog
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\GenerateResource.write.1.tlog
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\vit.dialogs.dll
-D:\project\C.NET\MMR\vit.dialogs\obj\Debug\vit.dialogs.pdb

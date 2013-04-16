@@ -1,5 +1,0 @@
-D:\project\C.NET\MMR\bin\Debug\vit.CK7.dll
-D:\project\C.NET\MMR\bin\Debug\vit.CK7.pdb
-D:\project\C.NET\MMR\vit.CK7\obj\Debug\ResolveAssemblyReference.cache
-D:\project\C.NET\MMR\vit.CK7\obj\Debug\vit.CK7.dll
-D:\project\C.NET\MMR\vit.CK7\obj\Debug\vit.CK7.pdb
