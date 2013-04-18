@@ -1,5 +1,0 @@
-D:\project\C.NET\MMR\bin\Debug\OpenPOP.dll
-D:\project\C.NET\MMR\bin\Debug\OpenPOP.pdb
-D:\project\C.NET\MMR\OpenPOP\obj\Debug\ResolveAssemblyReference.cache
-D:\project\C.NET\MMR\OpenPOP\obj\Debug\OpenPOP.dll
-D:\project\C.NET\MMR\OpenPOP\obj\Debug\OpenPOP.pdb

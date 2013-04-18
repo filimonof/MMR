@@ -6,3 +6,11 @@ D:\project\C.NET\MMR\mmr.db\sql\mmr.db_Database.sqlcmdvars
 D:\project\C.NET\MMR\mmr.db\sql\mmr.db.deploymanifest
 D:\project\C.NET\MMR\mmr.db\sql\mmr.db.dbschema
 D:\project\C.NET\MMR\mmr.db\obj\Default\mmr.db.dbschema
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db_Script.PreDeployment.sql
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db_Script.PostDeployment.sql
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db_Database.sqlsettings
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db_Database.sqldeployment
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db_Database.sqlcmdvars
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db.deploymanifest
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\sql\mmr.db.dbschema
+d:\project\C.NET\MMR_GitHub\MMR\mmr.db\obj\Default\mmr.db.dbschema

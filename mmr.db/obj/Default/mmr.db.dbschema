@@ -14,7 +14,7 @@
 			<Metadata Name="CompatibilityMode" Value="90" />
 		</CustomData>
 		<CustomData Category="Permissions" Type="XmlPermissions">
-			<Metadata Name="FileName" Value="D:\PROJECT\C.NET\MMR\MMR.DB\PROPERTIES\DATABASE.SQLPERMISSIONS" />
+			<Metadata Name="FileName" Value="D:\PROJECT\C.NET\MMR_GITHUB\MMR\MMR.DB\PROPERTIES\DATABASE.SQLPERMISSIONS" />
 		</CustomData>
 	</Header>
 	<Model>
@@ -602,7 +602,6 @@
 			</Relationship>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[MailParsed_Add]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -610,6 +609,7 @@ BEGIN
 		INSERT INTO tblMailParsed ([MailID]) VALUES (@MailID)
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References Name="[dbo].[tblMailParsed]" />
@@ -658,7 +658,6 @@ END]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[MailParsed_IsExists]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN		
@@ -670,6 +669,7 @@ BEGIN
 		RETURN @ID
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References ExternalSource="BuiltIns" Name="[int]" />
@@ -721,7 +721,6 @@ END]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[Parameter_Set]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -731,6 +730,7 @@ BEGIN
 		INSERT INTO tblParameters ([Name], [Value]) VALUES (@name, @value)	
 END;]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References Name="[dbo].[tblParameters]" />
@@ -801,7 +801,6 @@ END;]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[PlanPotr_ParseMaket]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -924,6 +923,7 @@ BEGIN
 
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References ExternalSource="BuiltIns" Name="[int]" />
@@ -1665,7 +1665,6 @@ END]]></Value>
 			</Relationship>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Data_Add]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -1699,6 +1698,7 @@ BEGIN
 	END
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References ExternalSource="BuiltIns" Name="[varchar]" />
@@ -1835,7 +1835,6 @@ END]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Data_CreateMaketPPBR]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -1903,6 +1902,7 @@ Quit:
 	
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References ExternalSource="BuiltIns" Name="[int]" />
@@ -2092,7 +2092,6 @@ END]]></Value>
 			</Relationship>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Logs_Add]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN	
@@ -2100,6 +2099,7 @@ BEGIN
 	SET @id = SCOPE_IDENTITY()
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References Name="[dbo].[tblPPBR_Logs]" />
@@ -2209,7 +2209,6 @@ END]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90Procedure" Name="[dbo].[tblPPBR_Logs_Update]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 BEGIN
@@ -2217,6 +2216,7 @@ BEGIN
 		UPDATE tblPPBR_Logs SET StatusID = @status, Comment = @comment WHERE [ID] = @id
 END]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
 					<References Name="[dbo].[tblPPBR_Logs]" />
@@ -2585,7 +2585,6 @@ END]]></Value>
 			</Relationship>
 		</Element>
 		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_DELETE]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="SqlTriggerType" Value="1" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
@@ -2626,6 +2625,7 @@ Quit:
 	
 END;]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="IsDeleteTrigger" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
@@ -2673,7 +2673,6 @@ END;]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_INSERT]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="SqlTriggerType" Value="1" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
@@ -2717,6 +2716,7 @@ Quit:
 			
 END;]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="IsInsertTrigger" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
@@ -2766,7 +2766,6 @@ END;]]></Value>
 			</Annotation>
 		</Element>
 		<Element Type="ISql90DmlTrigger" Name="[dbo].[TR_tblPPBR_Parameters_UPDATE_BEFORE]">
-			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="SqlTriggerType" Value="3" />
 			<Property Name="BodyScript">
 				<Value><![CDATA[ 
@@ -2926,6 +2925,7 @@ Quit:
 
 END;]]></Value>
 			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Property Name="IsUpdateTrigger" Value="True" />
 			<Relationship Name="BodyDependencies">
 				<Entry>
